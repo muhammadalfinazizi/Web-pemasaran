@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pembelian - MUSICA JAYA ELEKTRONIK</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="payment-container">
+        <div class="payment-card">
+            <h2>Form Pembelian</h2>
+            <div class="product-summary" id="productSummary"></div>
+            
+            <form class="payment-form" id="paymentForm">
+                <div class="form-group">
+                    <label>Nama pembeli</label>
+                    <input type="text" placeholder="Nama lengkap" required>
+                </div>
+                
+                <div class="form-group">
+                    <label>Nomor Telepon</label>
+                    <input type="tel" placeholder="08xx-xxxx-xxxx" required>
+                </div>
+                
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" placeholder="email@contoh.com" required>
+                </div>
+                
+                <div class="form-group">
+                    <label>Metode Pembayaran</label>
+                    <div class="payment-methods">
+                        <button type="button" class="payment-method active">OVO</button>
+                        <button type="button" class="payment-method">GoPay</button>
+                        <button type="button" class="payment-method">Dana</button>
+                        <button type="button" class="payment-method">Transfer Bank</button>
+                    </div>
+                    <p class="payment-note">Total bayar akan dikonfirmasi via telepon/email.</p>
+                </div>
+                
+                <div class="form-actions">
+                    <button type="button" class="btn btn-secondary" onclick="window.history.back()">Batal</button>
+                    <button type="submit" class="btn btn-primary">Beli</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="payment.js"></script>
+</body>
+</html>
